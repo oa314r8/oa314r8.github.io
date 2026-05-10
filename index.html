@@ -144,8 +144,7 @@
 
       .hero-copy,
       .hero-portrait,
-      .section-card,
-      .quote-card {
+      .section-card {
         position: relative;
         overflow: hidden;
         border: 1px solid var(--border);
@@ -349,7 +348,6 @@
       }
 
       .section-card p,
-      .quote-card p,
       footer p {
         margin: 16px 0 0;
         color: var(--muted);
@@ -366,21 +364,6 @@
         padding: 12px 0;
         border-top: 1px solid rgba(255, 255, 255, 0.08);
         color: #d5daf2;
-      }
-
-      .quote-card {
-        margin-top: 22px;
-        padding: 24px 28px;
-        background: var(--panel-strong);
-      }
-
-      .quote-card strong {
-        display: inline-block;
-        margin-bottom: 12px;
-        color: var(--gold);
-        font-size: 0.8rem;
-        letter-spacing: 0.22em;
-        text-transform: uppercase;
       }
 
       footer {
@@ -500,11 +483,6 @@
             <span class="eyebrow">Three Wings</span>
             <h2>Built for writing, making, and keeping records.</h2>
           </div>
-          <p>
-            The structure is simple on purpose: one clear home page, three
-            distinct content lanes, and enough atmosphere to feel like a vault
-            of relics wired into a neon grid.
-          </p>
         </div>
 
         <section class="sections">
@@ -520,6 +498,7 @@
               <li>Personal essays and updates</li>
               <li>Experiments worth documenting</li>
             </ul>
+            <p><a class="button button-secondary" href="archive/">Open The Archive</a></p>
           </article>
 
           <article class="section-card" id="recipes">
@@ -534,6 +513,7 @@
               <li>Special occasion dishes</li>
               <li>Annotated cooking notes</li>
             </ul>
+            <p><a class="button button-secondary" href="recipes/">Open The Kitchen Codex</a></p>
           </article>
 
           <article class="section-card" id="woodworking">
@@ -548,16 +528,12 @@
               <li>Tool setups and joinery notes</li>
               <li>Finished pieces with process details</li>
             </ul>
+            <p>
+              <a class="button button-secondary" href="woodworking/">
+                Open The Ironwood Shop
+              </a>
+            </p>
           </article>
-        </section>
-
-        <section class="quote-card">
-          <strong>Site Direction</strong>
-          <p>
-            High dark fantasy gives the page its stone, metal, and ember.
-            Cyberpunk gives it the signal glow, grid lines, and synthetic edge.
-            Together they keep the site dramatic without losing clarity.
-          </p>
         </section>
       </main>
 
