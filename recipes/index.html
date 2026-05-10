@@ -82,6 +82,13 @@
         background: rgba(255, 255, 255, 0.03);
       }
 
+      nav a:hover,
+      nav a:focus-visible,
+      .recipe-link:hover,
+      .recipe-link:focus-visible {
+        background: rgba(76, 229, 255, 0.08);
+      }
+
       .hero,
       .grid {
         display: grid;
@@ -129,6 +136,28 @@
         margin-top: 16px;
         color: var(--muted);
         line-height: 1.8;
+      }
+
+      .recipe-link {
+        display: block;
+        margin-top: 18px;
+        padding: 16px 18px;
+        border: 1px solid rgba(241, 185, 107, 0.14);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .recipe-link strong {
+        display: block;
+        color: var(--text);
+        font-size: 1.08rem;
+      }
+
+      .recipe-link span {
+        display: block;
+        margin-top: 8px;
+        color: var(--muted);
+        line-height: 1.7;
       }
 
       .grid {
@@ -183,11 +212,11 @@
             </p>
           </article>
           <aside class="panel">
-            <h2>Suggested First Entries</h2>
+            <h2>Available Recipes</h2>
             <ul>
-              <li>Favorite weeknight meals</li>
-              <li>Holiday or event recipes</li>
-              <li>Sauces, breads, and repeatable staples</li>
+              <li>Juicy Smoked Pork Loin</li>
+              <li>Smoked Pork Loin with Heavy Crust</li>
+              <li>More recipe cards can slot in here later</li>
             </ul>
           </aside>
         </section>
@@ -195,34 +224,43 @@
         <section class="grid">
           <article class="panel">
             <span class="eyebrow">Featured Recipe</span>
-            <h3>Coming Soon</h3>
+            <h3>Juicy Smoked Pork Loin</h3>
             <p>
-              Use this space for the recipe you want visitors to encounter
-              first, with a short introduction and why it matters.
+              Tender, herb-forward, lightly smoked pork loin with a moisture
+              strategy built around a gentle spritz and optional aromatic wrap.
             </p>
+            <a class="recipe-link" href="juicy-smoked-pork-loin/">
+              <strong>Open Recipe</strong>
+              <span>Best when you want tenderness, clean smoke, and a softer bark.</span>
+            </a>
           </article>
           <article class="panel">
             <span class="eyebrow">Recipe Index</span>
             <h3>Codex Shelf</h3>
             <p>
-              A natural place for categories like mains, breads, desserts, or
-              meal prep.
+              The first two recipe cards are live. Use this page as the index
+              for mains, breads, sauces, desserts, or meal prep later.
             </p>
+            <a class="recipe-link" href="smoked-pork-loin-heavy-crust/">
+              <strong>Smoked Pork Loin with Heavy Crust</strong>
+              <span>Built for a deeper bark, firmer exterior texture, and stronger savory edge.</span>
+            </a>
           </article>
           <article class="panel">
             <span class="eyebrow">Technique Notes</span>
             <h3>Kitchen Methods</h3>
             <p>
-              Save the small details here: substitutions, temperatures, timing,
-              and version history.
+              Both pork loin recipes document internal target temperatures,
+              smoke profile, and how to trade bark formation against moisture
+              retention.
             </p>
           </article>
           <article class="panel">
             <span class="eyebrow">Next Step</span>
-            <h3>Add Your First Dish</h3>
+            <h3>Expand the Codex</h3>
             <p>
-              Replace the placeholders with a real recipe card or expand this
-              into a fuller archive structure later.
+              New atomic recipe markdown files can be converted into additional
+              recipe pages and linked from this shelf as the collection grows.
             </p>
           </article>
         </section>
