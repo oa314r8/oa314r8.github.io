@@ -1,4 +1,4 @@
-# Smoked Pork Loin with Heavy Crust
+# Quick Smoked Pork Loin with Heavy Crust
 
 ## Overview
 This version is designed for deeper bark formation, a firmer exterior texture, and a more savory smoke profile while still keeping the pork loin juicy inside.
@@ -7,28 +7,21 @@ This version is designed for deeper bark formation, a firmer exterior texture, a
 
 # Ingredients
 
-## Pork
-- 1 pork loin (about 1 lb 6 oz)
+## Recommended
+- 1 whole pork loin
+- 6 parts kosher salt
+- 6 parts coarse black pepper
+- 4 parts onion powder
+- 4 parts paprika
+- 2 parts brown sugar
+- 2 parts dried rosemary
+- 2 parts dried thyme
 
-## Binder
-- 1 tbsp yellow mustard or olive oil
-
-## Rub
-- 1 tbsp kosher salt
-- 1 tbsp coarse black pepper
-- 2 tsp garlic powder
-- 2 tsp onion powder
-- 2 tsp paprika
-- 1 tsp brown sugar
-- 1 tsp dried rosemary
-- 1 tsp dried thyme
-- 1/2 tsp ground sage
-- 1 tsp celery seed
-- 1 tsp crushed coriander
-
-## Wood
-- Apple wood chunks
-- Small amount of red oak
+## Optional
+- 4 parts garlic powder
+- 1 part ground sage
+- 2 parts celery seed
+- 2 parts crushed coriander
 
 ---
 
@@ -57,13 +50,14 @@ This improves moisture retention and bark development.
 
 ## 2. Prepare the Rub
 
-Mix all rub ingredients thoroughly in a bowl.
+Mix the recommended rub ingredients thoroughly in a bowl. Add any optional
+flavor accents you want to include.
 
 ---
 
 ## 3. Apply Binder and Rub
 
-- Coat the pork loin lightly with mustard or olive oil.
+- Optional binder: coat the pork loin lightly with mustard or olive oil.
 - Apply the rub generously on all sides.
 - Let rest at room temperature while the smoker stabilizes.
 

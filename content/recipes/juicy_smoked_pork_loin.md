@@ -1,4 +1,4 @@
-# Juicy Smoked Pork Loin
+# Quick Juicy Smoked Pork Loin
 
 ## Overview
 This version prioritizes tenderness, moisture retention, and aromatic herb flavor with a lighter bark and gentle smoke profile.
@@ -7,38 +7,21 @@ This version prioritizes tenderness, moisture retention, and aromatic herb flavo
 
 # Ingredients
 
-## Pork
-- 1 pork loin (about 1 lb 1 oz)
+## Recommended
+- 1 whole pork loin
+- 6 parts kosher salt
+- 6 parts coarse black pepper
+- 4 parts onion powder
+- 4 parts paprika
+- 6 parts brown sugar
+- 6 parts dried rosemary
+- 2 parts dried thyme
 
-## Binder
-- 1 tbsp Dijon mustard
-- 1 tbsp olive oil
-
-## Rub
-- 1 tbsp kosher salt
-- 1 tbsp coarse black pepper
-- 2 tsp garlic powder
-- 2 tsp onion powder
-- 2 tsp paprika
-- 1 tbsp brown sugar
-- 1 tbsp dried rosemary
-- 1 tsp dried thyme
-- 1/2 tsp ground sage
-- 1 tsp dried parsley
-- 1/2 tsp cinnamon
-
-## Spritz
-- 1/2 cup apple juice
-- 1/2 cup water
-- 1 tsp apple cider vinegar
-
-## Wrap Additions (Optional)
-- 1 tbsp butter
-- 1 rosemary sprig
-
-## Wood
-- Apple wood chunks
-- Small amount of red oak
+## Optional
+- 4 parts garlic powder
+- 1 part ground sage
+- 2 parts dried parsley
+- 1 part cinnamon
 
 ---
 
@@ -67,14 +50,15 @@ This improves moisture retention and seasoning penetration.
 
 ## 2. Prepare the Rub
 
-Mix all rub ingredients thoroughly in a bowl.
+Mix the recommended rub ingredients thoroughly in a bowl. Add any optional
+flavor accents you want to include.
 
 ---
 
 ## 3. Apply Binder and Rub
 
-- Mix Dijon mustard and olive oil.
-- Coat pork loin lightly.
+- Optional binder: mix Dijon mustard and olive oil.
+- Coat pork loin lightly if using the binder.
 - Apply rub evenly on all sides.
 - Let rest at room temperature while smoker stabilizes.
 
@@ -121,7 +105,7 @@ Cook at:
 - After first hour, spritz every 30–40 minutes.
 
 Use:
-- apple juice mixture
+- apple juice, water, and a small splash of apple cider vinegar
 
 ---
 
