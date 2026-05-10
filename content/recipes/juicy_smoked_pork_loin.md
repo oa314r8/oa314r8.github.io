@@ -9,19 +9,21 @@ This version prioritizes tenderness, moisture retention, and aromatic herb flavo
 
 ## Recommended
 - 1 whole pork loin
-- 6 parts kosher salt
-- 6 parts coarse black pepper
-- 4 parts onion powder
-- 4 parts paprika
-- 6 parts brown sugar
-- 6 parts dried rosemary
-- 2 parts dried thyme
+- 1 Tbsp kosher salt
+- 1 Tbsp coarse black pepper
+- 2 tsp onion powder
+- 2 tsp paprika
+- 1 Tbsp brown sugar
+- 1 Tbsp dried rosemary
+- 1 tsp dried thyme
 
 ## Optional
-- 4 parts garlic powder
-- 1 part ground sage
-- 2 parts dried parsley
-- 1 part cinnamon
+- 1 Tbsp Dijon mustard
+- 1 Tbsp olive oil
+- 2 tsp garlic powder
+- 1/2 tsp ground sage
+- 1 tsp dried parsley
+- 1/2 tsp cinnamon
 
 ---
 
