@@ -3,77 +3,570 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>oa314r8</title>
+    <title>oa314r8 | Dark Signal</title>
     <meta
       name="description"
-      content="Personal GitHub Pages site for oa314r8."
+      content="A dark fantasy and cyberpunk GitHub Pages site featuring blog posts, recipes, and woodworking projects."
     />
     <style>
       :root {
-        color-scheme: light;
-        --bg: #f7f1e8;
-        --card: rgba(255, 255, 255, 0.76);
-        --text: #1e1d1a;
-        --muted: #5f5a52;
-        --accent: #b14d2f;
-        --border: rgba(30, 29, 26, 0.12);
+        color-scheme: dark;
+        --bg: #07080d;
+        --bg-soft: #11131c;
+        --panel: rgba(12, 16, 26, 0.78);
+        --panel-strong: rgba(16, 20, 32, 0.94);
+        --text: #eef2ff;
+        --muted: #9aa0ba;
+        --gold: #f1b96b;
+        --ember: #ff6b3d;
+        --violet: #8b5cf6;
+        --cyan: #4ce5ff;
+        --border: rgba(241, 185, 107, 0.18);
+        --shadow: 0 30px 90px rgba(0, 0, 0, 0.45);
       }
 
       * {
         box-sizing: border-box;
       }
 
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
         margin: 0;
         min-height: 100vh;
-        display: grid;
-        place-items: center;
-        padding: 24px;
         background:
-          radial-gradient(circle at top, rgba(177, 77, 47, 0.18), transparent 38%),
-          linear-gradient(180deg, #fff9f2 0%, var(--bg) 100%);
+          radial-gradient(circle at top, rgba(139, 92, 246, 0.18), transparent 28%),
+          radial-gradient(circle at 20% 20%, rgba(255, 107, 61, 0.14), transparent 22%),
+          linear-gradient(180deg, #090a10 0%, #05060b 100%);
         color: var(--text);
-        font-family: Georgia, "Times New Roman", serif;
+        font-family: Baskerville, "Palatino Linotype", "Book Antiqua", serif;
       }
 
-      main {
-        width: min(720px, 100%);
-        padding: 48px 40px;
-        border: 1px solid var(--border);
-        border-radius: 24px;
-        background: var(--card);
-        backdrop-filter: blur(8px);
-        box-shadow: 0 24px 80px rgba(30, 29, 26, 0.08);
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background:
+          linear-gradient(rgba(76, 229, 255, 0.045) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(76, 229, 255, 0.045) 1px, transparent 1px);
+        background-size: 72px 72px;
+        mask-image: radial-gradient(circle at center, black, transparent 80%);
+        opacity: 0.3;
       }
 
-      h1 {
-        margin: 0 0 12px;
-        font-size: clamp(2.5rem, 6vw, 4.75rem);
-        line-height: 0.95;
-        letter-spacing: -0.04em;
-      }
-
-      p {
-        margin: 0;
-        max-width: 40rem;
-        font-size: 1.1rem;
-        line-height: 1.7;
-        color: var(--muted);
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.03),
+          transparent 18%,
+          transparent 82%,
+          rgba(255, 255, 255, 0.03)
+        );
+        mix-blend-mode: screen;
       }
 
       a {
-        color: var(--accent);
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .shell {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 24px 0 80px;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 16px 20px;
+        border: 1px solid rgba(76, 229, 255, 0.14);
+        border-radius: 18px;
+        background: rgba(8, 11, 18, 0.72);
+        backdrop-filter: blur(12px);
+        box-shadow: var(--shadow);
+      }
+
+      .sigil {
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+      }
+
+      .sigil-mark {
+        color: var(--gold);
+        font-size: 0.85rem;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+      }
+
+      .sigil-name {
+        font-size: 1.35rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      nav a {
+        padding: 10px 14px;
+        border-radius: 999px;
+        color: var(--muted);
+        background: rgba(255, 255, 255, 0.03);
+        transition: 180ms ease;
+      }
+
+      nav a:hover,
+      nav a:focus-visible {
+        color: var(--text);
+        background: rgba(76, 229, 255, 0.1);
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 28px;
+        margin-top: 28px;
+      }
+
+      .hero-copy,
+      .hero-portrait,
+      .section-card,
+      .quote-card {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        border-radius: 28px;
+        background: var(--panel);
+        backdrop-filter: blur(14px);
+        box-shadow: var(--shadow);
+      }
+
+      .hero-copy {
+        padding: 42px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: rgba(241, 185, 107, 0.08);
+        color: var(--gold);
+        font-size: 0.78rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        font-weight: 400;
+      }
+
+      h1 {
+        margin-top: 22px;
+        font-size: clamp(3.8rem, 8vw, 6.8rem);
+        line-height: 0.9;
+        letter-spacing: -0.05em;
+      }
+
+      .lede {
+        margin-top: 24px;
+        max-width: 40rem;
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.9;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 28px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 160px;
+        padding: 14px 18px;
+        border-radius: 14px;
+        border: 1px solid transparent;
+        font-size: 0.96rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .button-primary {
+        background: linear-gradient(135deg, var(--ember), var(--gold));
+        color: #140d09;
+      }
+
+      .button-secondary {
+        border-color: rgba(76, 229, 255, 0.24);
+        background: rgba(76, 229, 255, 0.06);
+        color: var(--text);
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+        margin-top: 30px;
+      }
+
+      .hero-grid div {
+        padding: 16px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+
+      .hero-grid strong {
+        display: block;
+        margin-bottom: 6px;
+        color: var(--gold);
+        font-size: 1.2rem;
+      }
+
+      .hero-grid span {
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      .hero-portrait {
+        min-height: 100%;
+        background:
+          linear-gradient(180deg, rgba(76, 229, 255, 0.08), transparent 42%),
+          linear-gradient(180deg, rgba(12, 16, 26, 0.3), rgba(12, 16, 26, 0.94));
+      }
+
+      .hero-portrait img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        min-height: 560px;
+        object-fit: cover;
+        filter: saturate(0.78) contrast(1.05) brightness(0.82);
+      }
+
+      .portrait-caption {
+        position: absolute;
+        left: 22px;
+        right: 22px;
+        bottom: 20px;
+        padding: 16px 18px;
+        border-radius: 18px;
+        background: rgba(6, 9, 15, 0.74);
+        border: 1px solid rgba(241, 185, 107, 0.14);
+      }
+
+      .portrait-caption strong {
+        display: block;
+        font-size: 1rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .portrait-caption span {
+        display: block;
+        margin-top: 6px;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      .section-heading {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 16px;
+        margin: 64px 0 18px;
+      }
+
+      .section-heading p {
+        max-width: 34rem;
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .sections {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .section-card {
+        padding: 28px;
+      }
+
+      .section-card::before,
+      .quote-card::before,
+      .hero-copy::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        padding: 1px;
+        background: linear-gradient(
+          135deg,
+          rgba(241, 185, 107, 0.34),
+          rgba(76, 229, 255, 0.18),
+          transparent 60%
+        );
+        -webkit-mask:
+          linear-gradient(#000 0 0) content-box,
+          linear-gradient(#000 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+      }
+
+      .section-tag {
+        display: inline-block;
+        margin-bottom: 16px;
+        color: var(--cyan);
+        font-size: 0.76rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+      }
+
+      .section-card p,
+      .quote-card p,
+      footer p {
+        margin: 16px 0 0;
+        color: var(--muted);
+        line-height: 1.8;
+      }
+
+      .section-card ul {
+        margin: 20px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .section-card li {
+        padding: 12px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        color: #d5daf2;
+      }
+
+      .quote-card {
+        margin-top: 22px;
+        padding: 24px 28px;
+        background: var(--panel-strong);
+      }
+
+      .quote-card strong {
+        display: inline-block;
+        margin-bottom: 12px;
+        color: var(--gold);
+        font-size: 0.8rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+      }
+
+      footer {
+        margin-top: 56px;
+        padding: 28px 20px 8px;
+        text-align: center;
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 960px) {
+        .hero,
+        .sections {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-copy,
+        .section-card {
+          padding: 28px;
+        }
+
+        .hero-portrait img {
+          min-height: 420px;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .shell {
+          width: min(100% - 20px, 100%);
+          padding-top: 14px;
+        }
+
+        .topbar,
+        .section-heading {
+          display: block;
+        }
+
+        nav {
+          margin-top: 14px;
+        }
+
+        h1 {
+          font-size: clamp(3rem, 16vw, 4.8rem);
+        }
+
+        .hero-grid {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
   <body>
-    <main>
-      <h1>oa314r8</h1>
-      <p>
-        This GitHub Pages site is live and ready for content. Replace this page
-        with your homepage, project links, writing, or anything else you want
-        to publish on the web.
-      </p>
-    </main>
+    <div class="shell">
+      <header class="topbar">
+        <div class="sigil">
+          <span class="sigil-mark">Dark Signal</span>
+          <span class="sigil-name">oa314r8</span>
+        </div>
+        <nav>
+          <a href="#blog">Blog</a>
+          <a href="#recipes">Recipes</a>
+          <a href="#woodworking">Woodworking</a>
+          <a href="https://github.com/oa314r8">GitHub</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <span class="eyebrow">Arcane Neon Workshop</span>
+            <h1>Forge Signal From the Dark.</h1>
+            <p class="lede">
+              This is a personal stronghold built at the seam between torchlit
+              stone corridors and electric skylines. It is a place for field
+              notes, kitchen alchemy, and woodworking logs, all wrapped in a
+              darker fantasy shell with a cybernetic pulse.
+            </p>
+            <div class="actions">
+              <a class="button button-primary" href="#blog">Enter the Archive</a>
+              <a class="button button-secondary" href="#woodworking">
+                View the Workshop
+              </a>
+            </div>
+            <div class="hero-grid">
+              <div>
+                <strong>Blog</strong>
+                <span>Dispatches, essays, experiments, and longer-form lore.</span>
+              </div>
+              <div>
+                <strong>Recipes</strong>
+                <span>Comfort food, ritual meals, and kitchen notes worth keeping.</span>
+              </div>
+              <div>
+                <strong>Woodworking</strong>
+                <span>Build journals, finished pieces, and shop-born prototypes.</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero-portrait">
+            <img src="assets/familiar.jpeg" alt="A cat posed like a watchful familiar." />
+            <div class="portrait-caption">
+              <strong>The Familiar</strong>
+              <span>
+                Guardian of the archive, watcher of thresholds, and supervisor
+                of every late-night build.
+              </span>
+            </div>
+          </aside>
+        </section>
+
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Three Wings</span>
+            <h2>Built for writing, making, and keeping records.</h2>
+          </div>
+          <p>
+            The structure is simple on purpose: one clear home page, three
+            distinct content lanes, and enough atmosphere to feel like a vault
+            of relics wired into a neon grid.
+          </p>
+        </div>
+
+        <section class="sections">
+          <article class="section-card" id="blog">
+            <span class="section-tag">01 / Blog</span>
+            <h3>The Archive</h3>
+            <p>
+              A place for project logs, essays, technical notes, campaign
+              energy, and anything else that deserves more than a passing post.
+            </p>
+            <ul>
+              <li>Build notes and deep dives</li>
+              <li>Personal essays and updates</li>
+              <li>Experiments worth documenting</li>
+            </ul>
+          </article>
+
+          <article class="section-card" id="recipes">
+            <span class="section-tag">02 / Recipes</span>
+            <h3>The Kitchen Codex</h3>
+            <p>
+              A recipe section for repeatable favorites, meal prep systems, and
+              dishes that feel half tavern fare, half laboratory ritual.
+            </p>
+            <ul>
+              <li>Weeknight staples</li>
+              <li>Special occasion dishes</li>
+              <li>Annotated cooking notes</li>
+            </ul>
+          </article>
+
+          <article class="section-card" id="woodworking">
+            <span class="section-tag">03 / Woodworking</span>
+            <h3>The Ironwood Shop</h3>
+            <p>
+              A running record of woodworking projects, sketches, materials, and
+              lessons learned in the sawdust and sparks.
+            </p>
+            <ul>
+              <li>Project galleries and progress logs</li>
+              <li>Tool setups and joinery notes</li>
+              <li>Finished pieces with process details</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="quote-card">
+          <strong>Site Direction</strong>
+          <p>
+            High dark fantasy gives the page its stone, metal, and ember.
+            Cyberpunk gives it the signal glow, grid lines, and synthetic edge.
+            Together they keep the site dramatic without losing clarity.
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          Published through GitHub Pages at
+          <a href="https://oa314r8.github.io">oa314r8.github.io</a>
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
