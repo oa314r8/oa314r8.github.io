@@ -103,8 +103,9 @@ Cook at:
 
 ### Moisture Strategy
 
-- Do not spritz during first hour.
-- After first hour, spritz every 30–40 minutes.
+- Do not spritz during first 30 minutes.
+- Lightly spritz at about 35–40 minutes.
+- Spritz once more near 50 minutes only if the surface looks dry.
 
 Use:
 - apple juice, water, and a small splash of apple cider vinegar
@@ -114,7 +115,7 @@ Use:
 ## 3. Optional Wrap
 
 When internal temperature reaches about:
-- 130°F
+- 120–125°F
 
 Wrap loosely in foil or butcher paper with:
 - butter
@@ -133,7 +134,7 @@ Carryover cooking should finish near:
 - 145°F
 
 Approximate cook time:
-- 2.5 to 3.5 hours depending on smoker behavior.
+- 45 to 75 minutes for a typical 1.5 to 2 inch pork loin, depending on smoker behavior.
 
 ---
 
@@ -160,6 +161,6 @@ Excellent pairings:
 # Notes
 
 - Pork loin dries quickly above 150°F.
-- Pulling early is critical for tenderness.
+- Start checking internal temperature around 45 minutes.
 - Maintain clean smoke rather than heavy smoke.
 - Apple wood complements the herb profile exceptionally well.

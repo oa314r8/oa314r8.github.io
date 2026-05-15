@@ -105,7 +105,7 @@ Cook at:
 
 - Leave unwrapped for entire cook.
 - Minimal spritzing.
-- If desired, lightly spritz once after 90 minutes using water or diluted apple juice.
+- If desired, lightly spritz once at about 35–45 minutes using water or diluted apple juice.
 
 ---
 
@@ -115,7 +115,7 @@ Cook until internal temperature reaches:
 - 145°F
 
 Approximate cook time:
-- 2.5 to 3.5 hours depending on smoker behavior.
+- 45 to 75 minutes for a typical 1.5 to 2 inch pork loin, depending on smoker behavior.
 
 ---
 
@@ -143,6 +143,6 @@ Excellent pairings:
 
 # Notes
 
-- Small pork loins cook quickly. Start checking internal temperature early.
+- Small pork loins cook quickly. Start checking internal temperature around 45 minutes.
 - Resist opening the smoker too often.
 - Small offsets naturally fluctuate. A stable range matters more than perfect precision.
